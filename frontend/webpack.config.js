@@ -18,7 +18,7 @@ module.exports={
         /** "path"
          * the folder path of the output file 
          */
-        path: path.resolve(__dirname, "./static/frontend"),
+        path: path.resolve(__dirname, "./public/frontend"),
         /** "filename"
          * the name of the output file 
          */
@@ -37,7 +37,7 @@ module.exports={
         /** "static" 
          * This property tells Webpack what static file it should serve
         */
-        static: ["./static"],
+        static: ["./public"],
         /** "open" 
          * opens the browser after server is successfully started
         */
@@ -78,7 +78,7 @@ module.exports={
     },
     plugins: [
         new HtmlWebpackPlugin({
-          template: path.join(__dirname, 'templates', 'index.html')
+          template: path.join(__dirname, 'public', 'index.html')
         })
     ]
 };

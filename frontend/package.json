@@ -4,8 +4,8 @@
   "description": "Login test using MongoDB, Django, & React.",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --mode development --watch",
-    "build": "Webpack --mode production",
+    "start": "webpack-dev-server .",
+    "build": "Webpack .",
     "test": "test"
   },
   "repository": {
