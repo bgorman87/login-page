@@ -19,6 +19,8 @@ module.exports={
          * the folder path of the output file 
          */
         path: path.resolve(__dirname, "./public/frontend"),
+        publicPath: '/',
+
         /** "filename"
          * the name of the output file 
          */
@@ -51,7 +53,8 @@ module.exports={
         /** "liveReload"
          * disable live reload on the browser. "hot" must be set to false for this to work
         */
-        liveReload: true
+        liveReload: true,
+        historyApiFallback: true,
     },
     resolve: {
         /** "extensions" 
