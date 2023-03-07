@@ -1,0 +1,122 @@
+.page-container {
+    background: url('../Assets/background.jpg');
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-title {
+    margin: 0;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: normal;
+}    
+
+.login-container {
+    --color: hsla(var(--primary-color-dark), 0.7);
+    background-color: var(--color);
+    box-shadow: 0 0 15px 0 var(--color);
+    padding: 40px 30px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 20px;
+}
+
+.form {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 25px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input-group label {
+    color: white;
+    font-weight: lighter;
+}
+
+.input-group input {
+    font-size: 1.25rem;
+    padding: .5em;
+    background-color: hsla(var(--primary-color-light), 0.4);
+    border: none;
+    outline: none;
+    border-radius: .25em;
+    color: white;
+    font-weight: lighter;
+
+}
+
+.input-group.success input {
+    box-shadow: 0 0 0 1px hsla(var(--success-color));
+}
+
+.input-group.error input {
+    box-shadow: 0 0 0 1px hsla(var(--error-color));
+}
+
+.input-group input:focus {
+    box-shadow: 0 0 0 1px hsla(var(--primary-color));
+}
+
+.input-group .msg {
+    visibility: hidden;
+    font-size: 0.75rem;
+}
+
+.input-group.success .msg,
+.input-group.error .msg {
+    visibility: visible;
+}
+
+.input-group.success .msg {
+    color: hsl(var(--success-color));
+}
+
+.input-group.error .msg {
+    color: hsl(var(--error-color));
+}
+
+.login-button {
+    padding: 0.5em 1em;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: white;
+    background-color: hsla(var(--primary-color), 0.9);
+    border: 1px solid hsla(var(--primary-color));
+    border-radius: 0.25em;
+    outline: none;
+    cursor: pointer;
+}
+
+.login-button:hover,
+.login-button:focus {
+    background-color: hsla(var(--primary-color), 0.5);
+}
+
+.img-attribute {
+    position: fixed;
+    bottom: 0;
+    font-size: 0.75rem;
+    padding: 1em;
+    border-radius: 15px 15px 0px 0px;
+    background-color:hsla(var(--primary-color), 0.5);
+}
+
+.img-attribute a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}

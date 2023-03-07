@@ -1,0 +1,18 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --primary-hsl: hsl(194, 53%, 43%);
+    --primary-color-light: 200, 53%, 45%;
+    --primary-color: 200, 53%, 30%;
+    --primary-color-dark: 200, 53%, 15%;
+
+    --success-color: 100, 60%, 50%;
+    --error-color: 0, 60%, 50%;
+}
+
+body {
+    margin: 0;
+}

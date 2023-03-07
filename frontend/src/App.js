@@ -5,6 +5,7 @@ import Login from "./pages/Login.js";
 import Header from "./components/Header.js";
 import PrivateRoutes from "./utils/PrivateRoutes";
 import { AuthProvider } from "./context/AuthContext.js";
+import "./styles/App.css"
 
 const App = () => {
   return (

@@ -1,15 +1,20 @@
-import React, {useContext} from 'react'
-import AuthContext from '../context/AuthContext'
+import React, { useContext } from "react";
+import AuthContext from "../context/AuthContext";
 
 const Home = () => {
-  let {user, logoutUser} = useContext(AuthContext)
+  let { user, logoutUser } = useContext(AuthContext);
   return (
     <div>
-      { user ? (<button onClick={logoutUser}>Logout</button>) : <p>You shouldn't be here.</p>}
-      
-      { user && <p>Logged in via {user.email}</p> }
+      {user ? ( <div>
+        <p>All the budget went into the login...this is it.</p>
+        <p>JWT decoded email: {user.email}</p>        
+        <button onClick={logoutUser}>Logout</button>
+        </div>
+      )  : (
+        <p>Hmmm... you shouldn't be here.</p>
+      )}
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
